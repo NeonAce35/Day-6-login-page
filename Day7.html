@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.jpeg" type="image/x-icon">
+    <title>Day 7 Login Page</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F3F6FB;
+            color: #1F2937;
+            font-size: 16px;
+            margin: 0;
+        }
+        #container {
+            background-color: #FFFFFF;
+            margin: 30px auto;
+            width: 50%;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            box-sizing: border-box;
+            border-radius: 20px;
+            padding: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        h1 {
+            font-size: 28px;
+        }
+        .main {
+            color: #1F2937;
+        }
+        a {
+            color: #496A9B;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #385D8A;
+            text-decoration: underline;
+        }
+        input {
+            width: 100%;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            box-sizing: border-box;
+        }
+        hr {
+            opacity: 0.5;
+        }
+        #sign {
+            text-align: center;
+        }
+        button {
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            background-color: #2563EB;
+            color: white;
+            font-size: 1.2em;
+        }
+        #forgot {
+            text-align: right;
+        }
+        @media screen and (max-width: 600px) {
+
+            #container {
+                width: 95%;
+                padding: 20px;
+                margin: 15px auto;
+                box-sizing: border-box;
+            }
+
+            input {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            button {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1><span class="main">Login</span></h1>
+        <p>Please enter your details to log in.</p><hr><br><br>
+        <form action="">
+            <label for="email"><span class="main">Email</span></label>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com">
+            <label for="password"><span class="main">Password</span></label>
+            <input type="password" name="password" id="password" placeholder="Enter your password">
+            <p id="forgot"><a href="#">Forgot password</a></p>
+            <button type="submit">Login</button>
+        </form>
+        <p id="sign">Don't have an account, <a href="">Sign Up</a></p>
+    </div>
+</body>
+</html>
